@@ -11,3 +11,8 @@ names = ["apple", "orange", "mango"]
 names[0] = "changed"  # list is mutable, values can be changed
 print(names)
 print(len(names))
+
+
+names=names+["New Value",100]
+names.append("Appended Value")
+print(names)
