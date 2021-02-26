@@ -11,7 +11,6 @@ i = input("this is string")
 j = 90
 print(type(i))
 print(type(j))
-
 """ 
     multiple lines of comment
 """
