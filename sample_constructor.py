@@ -23,7 +23,14 @@ class Students:
     def add_year(cls):  # class as argument
         cls.year = cls.year + 1
 
+    @staticmethod
+    def display_welcome():
+        print("Welcome")
 
+
+Students.display_welcome()
+
+print("----------------------------------------------------")
 x = Students("Adi", 24, "Malappuram")
 y = Students("Athulya", 17, "Melattur")
 x.display()
