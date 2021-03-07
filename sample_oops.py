@@ -2,14 +2,21 @@
 
 class MySampleClass:
     def hello(self,n):
-        print("Hello: "+n)
+        self.name=n
+    def print_name(self):
+        print(self.name)
 
 
-# Creating an object of the class
+# Creating an object/instance of the class
 
 x = MySampleClass()
-name="Adithya Vijay K"
+y = MySampleClass()
+name = "Adithya Vijay K"
 x.hello(name)
+y.hello("Arjun")
+
+x.print_name()
+y.print_name()
 
 #This can also be done as
 #MySampleClass.hello(x) ,here x is self
