@@ -18,14 +18,27 @@ class Students:
         print("Age: " + str(self.age))
         print("Place: " + self.place)
 
+    # A function to add year+1, for this we need a class method
+    @classmethod
+    def add_year(cls):  # class as argument
+        cls.year = cls.year + 1
+
 
 x = Students("Adi", 24, "Malappuram")
 y = Students("Athulya", 17, "Melattur")
 x.display()
 y.display()
-print("_____________________________________")
+print("----------------------------------------------------")
 Students.year = Students.year + 1
 x.add_age()
 y.add_age()
+x.display()
+y.display()
+print("----------------------------------------------------")
+Students.add_year()
+x.add_age()
+y.add_age()
+x.relocate("Dubai")
+y.relocate("Pala")
 x.display()
 y.display()
